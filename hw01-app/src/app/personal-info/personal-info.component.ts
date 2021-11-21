@@ -1,7 +1,7 @@
 import {Component, Input, Output, EventEmitter, ViewChild} from "@angular/core";
 import { PersonInterface } from "../app.component";
-import { PassportInterface } from "../app.component";
-import { PassportInfoComponent } from "./passport-info/passport-info.component";
+
+
 
 @Component ({
     selector: 'personal-info',
@@ -12,15 +12,15 @@ import { PassportInfoComponent } from "./passport-info/passport-info.component";
 
 export class PersonalInfoComponent {
 
-    @Input() person: PersonInterface = {
+       @Input() person: PersonInterface = {
         firstName:'',
         lastName: '',
         middleName: '',
         birth: new Date('0-0-0000'),
         profession:'',
-        @Input() passport:  PassportInterface = {
+        passport:  {
             series: '',
             number: ''
-        };
+        }
     };
 }
