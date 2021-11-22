@@ -1,3 +1,4 @@
+import { formatDate } from '@angular/common';
 import { Component } from '@angular/core';
 
 export interface PassportInterface {
@@ -30,10 +31,15 @@ export class AppComponent {
     firstName: 'Somebody',
     lastName: 'Unknown',
     middleName:'New',
-    birth: new Date('01-01-2001'),
-    profession: 'super',
+    birth: new Date(Date.UTC(2000,1,1)),
+    profession: 'Some',
     passport: this.passport
 
   }
+
+  
+
 }
+
+
 

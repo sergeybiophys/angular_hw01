@@ -1,0 +1,27 @@
+<div class="personal-info">
+    <div style="float: right;">
+        <passport-info [passport]="person.passport"></passport-info>
+    </div>
+    <img width="80" src="https://i.pinimg.com/280x280_RS/c9/70/f1/c970f1cdcc9985ff650e469398c07424.jpg"  alt="">
+    <div style="display: flex; flex-wrap: wrap; justify-content: space-around;   border: 1px solid rgba(0,0,0,.7);">
+        <div>
+            <h4>{{person.firstName}}</h4>
+        </div>
+        <div>
+            <h4>{{person.lastName}}</h4>
+        </div>
+        <div>
+            <h4>{{person.middleName}}</h4>
+        </div>
+    </div>
+    <div style="display: flex; flex-direction: column;">
+        <div  style="float: left;">
+            <h4 style="margin-left: 30px;">Birth: {{formatDate}}</h4>
+        </div>
+        <div>
+            <h4 style="margin-left: 30px;">Profession: {{person.profession}}</h4>
+        </div>
+    </div>
+
+
+</div>

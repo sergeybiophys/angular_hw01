@@ -23,4 +23,8 @@ export class PersonalInfoComponent {
             number: ''
         }
     };
+    get formatDate()
+    {
+        return this.person.birth.toLocaleDateString();
+    }
 }
