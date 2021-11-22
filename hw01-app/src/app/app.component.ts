@@ -29,8 +29,8 @@ export class AppComponent {
 
   person: PersonInterface = {
     firstName: 'Somebody',
-    lastName: 'Unknown',
-    middleName:'New',
+    lastName: 'Very',
+    middleName:'Unknown',
     birth: new Date(Date.UTC(2000,1,1)),
     profession: 'Some',
     passport: this.passport
